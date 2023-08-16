@@ -26,9 +26,9 @@ from src.backend.join_path import JoinKey, JoinPath
 random.seed(0)
 
 path = ""  # Add the path to all datasets
-query_data = ""  # Add name of initial dataset
-class_attr = ""  # column name of prediction attribute
-query_path = path + "/" + query_data
+base_table_name = "base_school.csv"  # Add name of initial dataset
+class_attr = "target"  # column name of prediction attribute
+query_path = path + "/" + base_table_name
 
 
 epsilon = 0.05  # Metam parameter
@@ -38,10 +38,10 @@ uninfo = (
     0  # Number of uninformative profiles to be added on top of default set of profiles
 )
 
-filepath = ""  # File containing all join paths
+path_joinfile = "sampled_schools.txt"  # File containing all join paths
 
 
-options = join_path.get_join_paths_from_file(query_data, filepath)
+options = join_path.get_join_paths_from_file(base_table_name, path_joinfile)
 
 
 files = [f for f in listdir(path) if isfile(join(path, f))]
