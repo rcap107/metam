@@ -25,6 +25,8 @@ def identify_group_query(new_col_lst,clusters,grp_size,likelihood_num,likelihood
             l_iter+=1
 
         lst=clusters[l_iter]
+        if len(lst) == 0:
+            break
         clust_elem = lst[random.randint(0,len(lst)-1)]
         group.append(clust_elem)
         grp_representation+= str(clust_elem.loc)+"|"
