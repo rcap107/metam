@@ -1,5 +1,5 @@
 import pandas as pd
-from join_column import JoinColumn
+from .join_column import JoinColumn
 import random
 def get_column_lst(joinable_lst):
     i=0
@@ -93,6 +93,7 @@ class JoinKey:
         except:
             self.tbl=''
             self.col=''
+            self.tbl_pth=''
 
         self.unique_values = unique_values
         self.total_values = total_values
@@ -175,14 +176,21 @@ def cluster_join_paths(joinable_lst,k,epsilon):
         if max_dist<epsilon:
             break
         i+=1
-    return (centers,assignment,get_clusters(assignment,k))
+    clusters = get_clusters(assignment,k)
+    filtered_clusters = []
+    filtered_centers = []
+    for i, v in enumerate(clusters):
+        if len(v) > 0:
+            filtered_clusters.append(v)
+            filtered_centers.append(centers[i])
+    return filtered_centers, assignment, filtered_clusters
 
 
-def get_join_paths_from_file(querydata,filepath):
-    df=pd.read_csv(filepath)
+def get_join_paths_from_file(base_table_name,path_joinfile, separator=','):
+    df=pd.read_csv(path_joinfile, sep=separator)
 
-    subdf=df[df['tbl1']==querydata]
-    subdf2=df[df['tbl2']==querydata]
+    subdf=df[df['tbl1']==base_table_name]
+    subdf2=df[df['tbl2']==base_table_name]
 
     options=[]
 
@@ -191,9 +199,12 @@ def get_join_paths_from_file(querydata,filepath):
         jk2=JoinKey('','',0,0)
         jk1.tbl=row['tbl1']
         jk1.col=row['col1']
+        jk1.tbl_pth=row["tbl_pth1"]
 
         jk2.tbl=row['tbl2']
         jk2.col=row['col2']
+        jk2.tbl_pth=row["tbl_pth2"]
+
         ret_jp = JoinPath([jk1,jk2])
         options.append(ret_jp)
 
@@ -203,9 +214,12 @@ def get_join_paths_from_file(querydata,filepath):
         jk2=JoinKey('','',0,0)
         jk1.tbl=row['tbl1']
         jk1.col=row['col1']
+        jk1.tbl_pth=row["tbl_pth1"]
 
         jk2.tbl=row['tbl2']
         jk2.col=row['col2']
+        jk2.tbl_pth=row["tbl_pth2"]
+
         ret_jp = JoinPath([jk2,jk1])
         options.append(ret_jp)
 
