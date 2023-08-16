@@ -1,6 +1,6 @@
 import operator
 from sklearn import datasets, linear_model
-import group_helper
+
 
 def initialize_weights(jc,weights):
     proflst= jc.profile_values.keys()

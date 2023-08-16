@@ -1,23 +1,24 @@
 import copy
-import profile_weights
+import math
+import operator
+import pickle
 import profile
-from sklearn.feature_selection import mutual_info_classif
+import random
+import sys
 from os import listdir
 from os.path import isfile, join
-import pandas as pd
-from dataset import Dataset
-import math
-import pandas as pd
-from join_path import JoinKey, JoinPath
-from join_column import  JoinColumn
-import sys
-import pickle
-import join_path
-import operator,random
-from sklearn import datasets, linear_model
-import group_helper
 
-def run_metam(tau,oracle,candidates,theta,metric,initial_df,new_col_lst,weights,class_attr,clusters,assignment,uninfo,epsilon):
+from .group_helper import identify_group_query
+import pandas as pd
+from .profile_weights import get_weights, sort_candidates
+from .dataset import Dataset
+from .join_column import JoinColumn
+from .join_path import JoinKey, JoinPath
+from sklearn import datasets, linear_model
+from sklearn.feature_selection import mutual_info_classif
+
+
+def run_metam(tau,oracle,candidates,theta,metric,initial_df,new_col_lst,weights,class_attr,clusters,assignment,uninfo,epsilon, centers):
 
 
     likelihood_num=[]
@@ -70,7 +71,7 @@ def run_metam(tau,oracle,candidates,theta,metric,initial_df,new_col_lst,weights,
 
             #Choose the candidate with maximum score
             if iter==0 or i==0:
-                sorted_cand = profile_weights.sort_candidates(new_col_lst,candidates,weights,overall_queried)
+                sorted_cand = sort_candidates(new_col_lst,candidates,weights,overall_queried)
             #print (sorted_cand)
             j=0
             while j<len(sorted_cand):
@@ -128,7 +129,7 @@ def run_metam(tau,oracle,candidates,theta,metric,initial_df,new_col_lst,weights,
             if len(list(grp_queried_cand.keys())) == len(new_col_lst):
                 grp_size*=2
 
-            (jc_lst,jc_representation)=group_helper.identify_group_query(new_col_lst,clusters,grp_size,likelihood_num,likelihood_den,grp_queried_cand)
+            (jc_lst,jc_representation)=identify_group_query(new_col_lst,clusters,grp_size,likelihood_num,likelihood_den,grp_queried_cand)
             grp_merged_df=copy.deepcopy(base_df)
             for jc in jc_lst:
                 grp_merged_df[jc.column]=jc.merged_df[jc.column]
@@ -158,13 +159,13 @@ def run_metam(tau,oracle,candidates,theta,metric,initial_df,new_col_lst,weights,
                 likelihood_den[clust_id]+=1
 
             if iter==0:
-                weights=profile_weights.get_weights(new_col_lst,base_df,queried_cand,weights,uninfo)
+                weights=get_weights(new_col_lst,base_df,queried_cand,weights,uninfo)
                 #if len(list(queried_cand.keys())) > 10:
                 #    print (weights)
             i+=1
 
 
-        weights=profile_weights.get_weights(new_col_lst,base_df,queried_cand,weights,uninfo)
+        weights=get_weights(new_col_lst,base_df,queried_cand,weights,uninfo)
         if total_queries>stopping_criterion:
             break
 
