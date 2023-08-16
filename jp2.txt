@@ -1,0 +1,2 @@
+tbl_pth1,tbl1,col1,tbl_pth2,tbl2,col2
+/home/soda/rcappuzz/work/benchmark-join-suggestions/data/source_tables/us-accidents-yadl-ax-binary.parquet,us-accidents-yadl-ax-binary,col_to_embed,/storage/store/work/rcappuzz/yago3-dl/wordnet_big_num_cp/yagowordnet_cp_wordnet_school/wordnet_school_wasCreatedOnDate_isLocatedIn.parquet,wordnet_school_wasCreatedOnDate_isLocatedIn,isLocatedIn

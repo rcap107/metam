@@ -1,0 +1,101 @@
+tbl1;col1;tbl2;col2
+base_school.csv;DBN;s27g-2w3u.csv;DBN
+base_school.csv;DBN;s52a-8aq6.csv;DBN
+base_school.csv;School Name;64pu-zyr2.csv;LOCATION NAME
+base_school.csv;Total Parent Response Rate (%);8wi4-bsy4.csv;lot
+base_school.csv;DBN;44t3-dj6x.csv;DBN
+base_school.csv;class;xswt-4vsm.csv;waste_type
+base_school.csv;Total Parent Response Rate (%);jt7v-77mi.csv;Violation Code
+base_school.csv;DBN;mjux-q9d4.csv;DBN
+base_school.csv;DBN;base.csv;DBN
+base_school.csv;Total Parent Response Rate (%);k2zg-756q.csv;total_parent_response_rate
+base_school.csv;Total Teacher Response Rate (%);base.csv;Total Teacher Response Rate (%)
+base_school.csv;DBN;4n2j-ut8i.csv;DBN
+base_school.csv;DBN;tbl_9.csv;f250
+base_school.csv;DBN;crime.csv;DBN
+base_school.csv;DBN;qybk-bjjc.csv;DBN
+base_school.csv;Total Parent Response Rate (%);77nt-5ivc.csv;numbermet1domain
+base_school.csv;DBN;vrku-2kif.csv;School
+base_school.csv;Total Student Response Rate (%);qvir-knu3.csv;graduation_rate_2013
+base_school.csv;DBN;2010_Gen_Ed_Survey_Data.csv;dbn
+base_school.csv;School Name;4ynn-w9fk.csv;LOCATION NAME
+base_school.csv;DBN;2013_NYC_School_Survey.csv;DBN
+base_school.csv;class;6swy-cmkq.csv;ground_tenant_unlawful_rent_increase
+base_school.csv;Total Teacher Response Rate (%);dw27-rash.csv;nwea_reading_attainment_grade_10
+base_school.csv;Total Parent Response Rate (%);5x8i-3c5b.csv;Total Parent 
+base_school.csv;Total Parent Response Rate (%);k7hf-8y75.csv;humidity
+base_school.csv;class;xqmg-7z3j.csv;is_the_space_shared
+base_school.csv;Total Parent Response Rate (%);jtus-srrj.csv;Total Parent 
+base_school.csv;Total Teacher Response Rate (%);2013_NYC_School_Survey.csv;Total Teacher Response Rate (%)
+base_school.csv;Total Parent Response Rate (%);79c3-mzyc.csv;county
+base_school.csv;Total Parent Response Rate (%);5x8i-3c5b.csv;Total Teacher Response Rate %
+base_school.csv;Total Parent Response Rate (%);jzd2-a3yt.csv;readinglevel2
+base_school.csv;Total Parent Response Rate (%);5aye-4rtt.csv;pci_score
+base_school.csv;DBN;nenq-ccpd.csv;DBN
+base_school.csv;DBN;xne4-4v8f.csv;DBN
+base_school.csv;DBN;qr.csv;DBN
+base_school.csv;DBN;piri-jns7.csv;DBN
+base_school.csv;DBN;8ecp-kw89.csv;DBN
+base_school.csv;DBN;upwt-zvh3.csv;DBN
+base_school.csv;Total Teacher Response Rate (%);dw27-rash.csv;nwea_reading_attainment_grade_10
+base_school.csv;class;y2qf-xxzw.csv;met10percentflagall
+base_school.csv;Total Parent Response Rate (%);8ecp-kw89.csv;Total Parent 
+base_school.csv;School Name;4n2j-ut8i.csv;SCHOOL
+base_school.csv;Total Teacher Response Rate (%);j2j3-acqj.csv;_2015_energy_star_score
+base_school.csv;Total Parent Response Rate (%);j8v3-3ik3.csv;readinglevel1
+base_school.csv;DBN;8mzw-jfss.csv;DBN
+base_school.csv;Total Parent Response Rate (%);68nj-d8nb.csv;mathlevel2
+base_school.csv;Total Parent Response Rate (%);6rq2-yx28.csv;id
+base_school.csv;School Name;5cd6-v74i.csv;School Name
+base_school.csv;Total Parent Response Rate (%);7qaw-cgfu.csv;countlevel2
+base_school.csv;School Name;5x8i-3c5b.csv;School Name
+base_school.csv;School Name;4snd-in5m.csv;LOCATION NAME
+base_school.csv;class;xqmg-7z3j.csv;is_school_co_located
+base_school.csv;School Name;5a8g-vpdd.csv;School Name
+base_school.csv;DBN;cvh6-nmyi.csv;DBN
+base_school.csv;class;2dem-8rq7.csv;attendance_boundaries
+base_school.csv;Total Teacher Response Rate (%);dn4d-x42e.csv;wqi_tss
+base_school.csv;Total Parent Response Rate (%);77u7-ptbn.csv;#Hispanic
+base_school.csv;Total Parent Response Rate (%);83ki-hu3p.csv;corridor
+base_school.csv;class;xswt-4vsm.csv;waste_quanitity_ind
+base_school.csv;Total Student Response Rate (%);udss-6pus.csv;Element Percent Positive 3
+base_school.csv;Total Student Response Rate (%);u4hi-kt3x.csv;rr_s
+base_school.csv;School Name;54rr-tdmz.csv;LOCATION NAME
+base_school.csv;Total Parent Response Rate (%);7umj-8mgw.csv;scienceexcusedabsence
+base_school.csv;class;xqmg-7z3j.csv;space_used_for_any
+base_school.csv;Total Student Response Rate (%);udss-6pus.csv;Element Percent Positive 1
+base_school.csv;DBN;5a8g-vpdd.csv;DBN
+base_school.csv;DBN;xijd-ubiu.csv;DBN
+base_school.csv;DBN;yahh-6yjc.csv;DBN
+base_school.csv;DBN;u4hi-kt3x.csv;dbn
+base_school.csv;DBN;kwvk-z7i9.csv;DBN
+base_school.csv;Total Teacher Response Rate (%);cp7s-7gxg.csv;attainment_reading_pct_es
+base_school.csv;Total Student Response Rate (%);tmr6-dfvn.csv;Total Teacher Response Rate
+base_school.csv;class;25cx-4jug.csv;critical
+base_school.csv;DBN;xiyj-m4sj.csv;DBN
+base_school.csv;Total Teacher Response Rate (%);dn4d-x42e.csv;wqi_tss
+base_school.csv;Total Teacher Response Rate (%);dw27-rash.csv;nwea_reading_attainment_grade_2
+base_school.csv;Total Parent Response Rate (%);7msd-qq2c.csv;writinglevel2
+base_school.csv;DBN;Schools_Progress_Report_2012-2013.csv;DBN
+base_school.csv;Total Parent Response Rate (%);j5qg-mmuy.csv;user_age
+base_school.csv;Total Parent Response Rate (%);8iee-pzu6.csv;# Students Residing in Shelter
+base_school.csv;class;2dem-8rq7.csv;bilingual_services
+base_school.csv;Total Parent Response Rate (%);8vqd-3345.csv;students_enrolled_in_cte
+base_school.csv;Total Parent Response Rate (%);jy6h-2e5x.csv;county_code
+base_school.csv;Total Parent Response Rate (%);78va-8dhi.csv;pci_score
+base_school.csv;Total Student Response Rate (%);qvir-knu3.csv;graduation_rate_2014
+base_school.csv;Total Parent Response Rate (%);77q4-nkfh.csv;energy_star_score
+base_school.csv;DBN;ffnc-f3aa.csv;DBN
+base_school.csv;Total Parent Response Rate (%);5a8g-vpdd.csv;Total Parent Response Rate
+base_school.csv;Total Teacher Response Rate (%);dn4d-x42e.csv;overall_wqi
+base_school.csv;Total Parent Response Rate (%);jtpv-nuuc.csv;n_prof_pct_watn3_elalevel2
+base_school.csv;DBN;hdpu-mku8.csv;DBN
+base_school.csv;DBN;wpqj-3buw.csv;School
+base_school.csv;Total Teacher Response Rate (%);hvwa-bi3h.csv;total_teacher_response_rate
+base_school.csv;Total Parent Response Rate (%);jda9-pbm6.csv;state_county_number
+base_school.csv;class;xyq2-jjkn.csv;re_opened
+base_school.csv;Total Parent Response Rate (%);5dtu-swbk.csv;district
+base_school.csv;Total Parent Response Rate (%);5a8g-vpdd.csv;Total Student Response Rate
+base_school.csv;School Name;63u4-2zc2.csv;School Name
+base_school.csv;Total Parent Response Rate (%);5a8g-vpdd.csv;Total Teacher Response Rate
+base_school.csv;DBN;6je4-4x7e.csv;DBN
